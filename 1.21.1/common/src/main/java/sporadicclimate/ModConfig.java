@@ -12,8 +12,8 @@ public class ModConfig {
         return Balm.getConfig().getActiveConfig(ModConfig.class);
     }
 
-    @Comment("Multiplies the scale of temperature zones")
-    public float zoneScaleMultiplier = 0.2f;
+    @Comment("Multiplies the scale of temperature zones. Set to 1 for vanilla.")
+    public float zoneScaleMultiplier = 1f;
 
     public float getZoneScaleMultiplier() {
         return 1 / MathHelper.clamp(zoneScaleMultiplier, 0.01f, 100f);

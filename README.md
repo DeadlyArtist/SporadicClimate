@@ -1,7 +1,7 @@
 # Sporadic Climate
 Minecraft mod to make temperate zones much smaller in size for more varied generation.
 
-Allows customizing the size multiplier in the config.
+Allows customizing the size multiplier in the config. Pairs well with [Biome Sizes](https://www.curseforge.com/minecraft/mc-mods/biomesize).
 
 Requires the Balm mod.
 
