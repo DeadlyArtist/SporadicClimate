@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "authors": $mod_authors,
+  "contact": {
+    "homepage": "${homepage}",
+    "sources": "${source}",
+    "issues": "${issues}"
+  },
+  "license": "${license}",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "sporadicclimate.fabric.ModDataGenerator"
+    ],
+    "main": [
+      "sporadicclimate.fabric.ModEntryFabric"
+    ],
+    "client": [
+      "sporadicclimate.fabric.client.ClientModEntryFabric"
+    ]
+  },
+  "mixins": [
+    "sporadicclimate.mixins.json",
+    "sporadicclimate.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": $compatible_minecraft_versions,
+    "java": ">=${java_version}"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
